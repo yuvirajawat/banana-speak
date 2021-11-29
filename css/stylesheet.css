@@ -1,24 +1,83 @@
-#user-text{
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400&display=swap');
+:root{
+    --primary-color:#f2c94c;
+    --black: #333333;
+    --width-break: 600px;
+}
+body{
+    font-family: 'Kalam', sans-serif;
+    margin:0;
+}
+main{
     display:block;
-    height:15vh;
-    width:50%;
-    margin:1rem;
     padding:1rem;
-   
+    max-width: var(--width-break);
+    margin:auto;
+}
+
+#user-text{
+    box-sizing: border-box;
+    display: block;
+    width:100%;
+    min-height: 20vh;
+    margin-top: 2rem;
+    font-size: large;
+    font-family: inherit; 
 }
 #btn-translate{
-    margin:1rem;
+    background-color: var(--primary-color);
+    border-style: none;
+    margin:1rem 0rem;
     padding:1rem 2rem;
-    font-size: 14px;
+    font-size: large;
+    font-family: inherit;
+}
+#btn-translate:hover{
+    cursor: pointer;
 }
 #banana-text{
+    box-sizing: border-box;
     border: solid 1px black;
     display:block;
-    width:50%;
-    height:10vh;
-    margin:1rem;
+    min-height: 10vh;
+    max-height: 20vh;
+    overflow: scroll;
+    font-size:large;
     padding:1rem;
+    margin-bottom: 2rem;;
 }
 #translation-head{
-    margin:1rem;
+    margin-top:1rem;
+}
+#app-name{
+    text-align:center;
+    display:block;
+    background-color: var(--primary-color);
+    color:var(--black);
+    padding:1rem;
+    font-size: 2rem;
+}
+nav{
+    display:block;
+    background-color: var(--primary-color);
+    margin:0;
+}
+footer{
+    position:fixed;
+    background-color: var(--primary-color);
+    color:var(--black);
+    text-align:center;
+    font-size:large;
+    bottom:0;
+    width:100%;
+}
+footer h2{
+    padding-top:1rem;
+    margin-bottom:0;
+}
+footer p{
+    max-width: var(--width-break);
+    margin:auto;
+    padding-top:0;
+    padding-bottom:1rem;
 }
