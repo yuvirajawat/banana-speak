@@ -19,7 +19,7 @@ main{
     box-sizing: border-box;
     display: block;
     width:100%;
-    min-height: 20vh;
+    min-height: 15vh;
     margin-top: 2rem;
     font-size: large;
     font-family: inherit; 
